@@ -22,6 +22,7 @@ body{
 }
 .name-box{
   background-color: #FFFFFF;
+  height: 24px;
   border-radius: 4px;
   padding: 8px;
   margin: 8px;
