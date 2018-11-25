@@ -8,11 +8,13 @@ const apiURL = 'data.json';
 class App extends Component {
   constructor(props) {
     super(props);
+    const now = moment();
+
     this.state = {
-      name: '',
-      day: 0,
-      month: 0,
-      startDate: moment()
+      data: [],
+      startDate: now,
+      day: now.days(),
+      month: now.month()
     }
     this.handleChange = this.handleChange.bind(this);
   };
@@ -21,21 +23,35 @@ class App extends Component {
     fetch(apiURL)
       .then(response => response.json())
       .then(json => this.setState({
-        name: json.data[1].name,
-        day: json.data.day,
-        month: json.data.month
+        data: json.data
       }))
   };
 
   handleChange(date) {
+    const [day, month] = date.split('-');
+
     this.setState({
+      day: Number(day),
+      month: Number(month),
       startDate: date
     });
   }
 
+  currentName() {
+    const { day, month } = this.state;
+
+    const matches = this.state.data.filter(v => v.day === day && v.month === month);
+    if (matches.length) {
+      return matches[0].name;
+    }
+
+    return '';
+  }
+
   render() {
-    const { name, startDate } = this.state;
-    console.log(name);
+    const { startDate } = this.state;
+    const name = this.currentName();
+
     return (
       <div>
         <h1 className='tilte'> Get a name day for a specific day</h1>

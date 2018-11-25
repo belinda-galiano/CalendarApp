@@ -1,50 +1,49 @@
 {
-  "data": 
-  [
-  {
-    "name": "Apollo, Apollonia, Carson, Dalton",
-    "day": 9,
-    "month": 2
-  },
-  {
-    "name": "Zdenko",
-    "day":1,
-    "month":2
-  },
-  {
-    "name": "Bernard, Eryk, Eryka",
-    "day":2,
-    "month":2
-  },
-  {
-    "name": "Appoline",
-    "day":3,
-    "month":2
-  },
-  {
-    "name": "Abigél,Alex",
-    "day":4,
-    "month":2
-  },
-  {
-    "name": "Apolonija, Zora, Sunčica",
-    "day":5,
-    "month":2
-  },
-  {
-    "name": "Alto, Anna Katharina(e)",
-    "day":6,
-    "month":2
-  },
-  {
-    "name": "Fanny",
-    "day":7,
-    "month":2
-  },
-  {
-    "name": "Girolamo Emiliani",
-    "day":8,
-    "month":2
-  }
-]
+  "data": [
+    {
+      "name": "Apollo, Apollonia, Carson, Dalton",
+      "day": 9,
+      "month": 2
+    },
+    {
+      "name": "Zdenko",
+      "day": 1,
+      "month": 2
+    },
+    {
+      "name": "Bernard, Eryk, Eryka",
+      "day": 2,
+      "month": 2
+    },
+    {
+      "name": "Appoline",
+      "day": 3,
+      "month": 2
+    },
+    {
+      "name": "Abigél,Alex",
+      "day": 4,
+      "month": 2
+    },
+    {
+      "name": "Apolonija, Zora, Sunčica",
+      "day": 5,
+      "month": 2
+    },
+    {
+      "name": "Alto, Anna Katharina(e)",
+      "day": 6,
+      "month": 2
+    },
+    {
+      "name": "Fanny",
+      "day": 7,
+      "month": 2
+    },
+    {
+      "name": "Girolamo Emiliani",
+      "day": 8,
+      "month": 2
+    }
+  ]
 }
